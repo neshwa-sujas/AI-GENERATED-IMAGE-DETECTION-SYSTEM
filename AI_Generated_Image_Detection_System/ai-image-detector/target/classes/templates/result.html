@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detection Result</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>AI Image Detection Result</h1>
+
+    <div class="result-box">
+
+        <p>
+            <strong>Uploaded File:</strong>
+            <span th:text="${filename}"></span>
+        </p>
+
+        <p>
+            <strong>Prediction:</strong>
+            <span th:text="${result}"></span>
+        </p>
+
+        <p>
+            <strong>Confidence:</strong>
+            <span th:text="${confidence}"></span>%
+        </p>
+
+    </div>
+
+    <br>
+
+    <a href="/">⬅ Upload Another Image</a>
+
+</div>
+
+</body>
+</html>

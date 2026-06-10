@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AI Image Detector</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>AI Generated Image Detection System</h1>
+
+    <p>Upload an image and check whether it is AI-generated or real.</p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <br><br>
+        <button type="submit">Detect Image</button>
+    </form>
+
+</div>
+
+</body>
+</html>
